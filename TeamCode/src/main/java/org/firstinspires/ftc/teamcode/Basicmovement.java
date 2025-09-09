@@ -46,9 +46,9 @@ public class Basicmovement extends LinearOpMode {
             x = gamepad1.left_stick_y;
 
             //sets the power of each motor according to the joystick movement
-            RBwheel.setPower(y-x);
+            RBwheel.setPower(y+x);
             RFwheel.setPower(y-x);
-            LBwheel.setPower(y+x);
+            LBwheel.setPower(y-x);
             LFwheel.setPower(y+x);
 
             //prints text to drivers hub console
