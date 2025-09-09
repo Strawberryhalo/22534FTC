@@ -10,7 +10,6 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 @TeleOp
 public class Movement extends LinearOpMode {
     //define each wheel/control hub as variables
-    //edit test
     private Blinker control_hub;
     private DcMotor RBwheel;
     private DcMotor RFwheel;
