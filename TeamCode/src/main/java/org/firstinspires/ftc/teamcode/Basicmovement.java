@@ -47,9 +47,9 @@ public class Basicmovement extends LinearOpMode {
 
             //sets the power of each motor according to the joystick movement
             RBwheel.setPower(y+x);
-            RFwheel.setPower(y-x);
+            RFwheel.setPower(y+x);
             LBwheel.setPower(y-x);
-            LFwheel.setPower(y+x);
+            LFwheel.setPower(y-x);
 
             //prints text to drivers hub console
             telemetry.addData("Status", "Running");
