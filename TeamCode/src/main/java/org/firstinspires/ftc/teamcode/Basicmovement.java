@@ -13,7 +13,7 @@ public class Basicmovement extends LinearOpMode {
     private Blinker control_hub;
     private DcMotor RBwheel;
     private DcMotor RFwheel;
-     private DcMotor LBwheel;
+    private DcMotor LBwheel;
     private DcMotor LFwheel;
     private DcMotor Flywheel;
     private DcMotor Intake;
