@@ -36,6 +36,8 @@ public class Basicmovement extends LinearOpMode {
         RBwheel.setDirection(DcMotor.Direction.REVERSE);
         RFwheel.setDirection(DcMotor.Direction.REVERSE);
         LFwheel.setDirection(DcMotor.Direction.REVERSE);
+        LBwheel.setDirection(DcMotor.Direction.REVERSE);
+        Flywheel.setDirection(DcMotor.Direction.FORWARD);
         //x & y axis as variables
         double x;
         double y;
@@ -57,19 +59,19 @@ public class Basicmovement extends LinearOpMode {
             y = gamepad1.right_stick_x;
 
             if (gamepad1.a) {
-                Flywheel.setPower(0.86);
-                Intake.setPower(1);
+                Flywheel.setPower(1);
+                Intake.setPower(-0.01);
             }
 
             if (gamepad1.b) {
-                Intake.setPower(1);
-                Flywheel.setPower(-0.25);
+                Intake.setPower(-0.5);
+                Flywheel.setPower(0);
             } else {
                 Intake.setPower(0);
             }
 
             if (gamepad1.y) {
-                Flywheel.setPower(0.9);
+                Flywheel.setPower(-0.9);
             }
 
             if (!gamepad1.a && !gamepad1.y) {

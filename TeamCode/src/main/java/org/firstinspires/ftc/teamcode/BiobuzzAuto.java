@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@Autonomous(name="BasicAutoLeftEdge", group="Robot")
+@Autonomous(name="BiobuzzAuto", group="Robot")
 public class  BiobuzzAuto extends LinearOpMode {
 
     //define each wheel/control hub as variables
@@ -53,9 +53,9 @@ public class  BiobuzzAuto extends LinearOpMode {
         // When run, this OpMode should start both motors driving forward. So adjust these two lines based on your first test drive.
         // Note: The settings here assume direct drive on left and right wheels.  Gear Reduction or 90 Deg drives may require direction flips
         LFwheel.setDirection(DcMotor.Direction.REVERSE);
-        LBwheel.setDirection(DcMotor.Direction.FORWARD);
-        RFwheel.setDirection(DcMotor.Direction.REVERSE);
-        RBwheel.setDirection(DcMotor.Direction.REVERSE);
+        LBwheel.setDirection(DcMotor.Direction.REVERSE);
+        RFwheel.setDirection(DcMotor.Direction.FORWARD);
+        RBwheel.setDirection(DcMotor.Direction.FORWARD);
 
         LFwheel.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         RFwheel.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
