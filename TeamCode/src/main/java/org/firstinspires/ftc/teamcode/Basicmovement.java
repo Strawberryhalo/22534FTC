@@ -60,18 +60,18 @@ public class Basicmovement extends LinearOpMode {
 
             if (gamepad1.a) {
                 Flywheel.setPower(1);
-                Intake.setPower(-0.01);
+                Intake.setPower(-0.5);
             }
 
             if (gamepad1.b) {
-                Intake.setPower(-0.5);
+                Intake.setPower(-0.9);
                 Flywheel.setPower(0);
             } else {
                 Intake.setPower(0);
             }
 
             if (gamepad1.y) {
-                Flywheel.setPower(-0.9);
+                Flywheel.setPower(-0.85);
             }
 
             if (!gamepad1.a && !gamepad1.y) {
